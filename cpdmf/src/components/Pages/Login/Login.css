@@ -1,6 +1,6 @@
 
 button{
-    position: absolute;
+    position:relative;
     font-family: Alatsi;
     flex: none;
     order: 0;
