@@ -1,16 +1,55 @@
 
-button{
-    position:relative;
-    font-family: Alatsi;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 170px;
-
-}
-
- 
-
-
-
-
+.headerTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 56.09%;
+    bottom: 30.26%;
+    
+    position: static;
+    width: 821px;
+    height: 38px;
+    left: 309.5px;
+    top: 10px;
+    
+    font-family: Aksara Bali Galang;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 81px;
+    display: flex;
+    align-items: center;
+    text-align: center;   
+    }
+    
+    
+    
+    
+    form{
+        margin: 50px;
+       
+    
+    }
+    
+    button{
+        position: absolute;
+        font-family: Alatsi;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 170px;
+    
+    }
+    
+     
+    
+    
+    
+    
+    
