@@ -1,4 +1,3 @@
-// import './App.css';
 import React from 'react';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -11,25 +10,22 @@ import View from './components/Dashboard/View/View';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Header/>
+    <>
+      <Router>
+        <Navbar />
         <Switch>
-        <Route path="/about">
-           <About/> 
-        </Route> 
-        <Route path="/login">
-        <Login />
-        </Route>
-        <Route path="/dashboard">
-        <View />
-        </Route>
-        <Route path="/">
-          <Home/>
-        </Route>
-        </Switch> 
-      </BrowserRouter>
-    </div>
+          <Route path='/' exact component={dashboard} />
+          <Route path='/cpd' component={cpd} />
+          <Route path='/course' component={course} />
+          <Route path='/workshop' exact component={workshop} />
+          <Route path='/blog' component={blogs} />
+          <Route path='/forum' component={forum} />
+          <Route path='/reports' exact component={reports} />
+          <Route path='/job' component={job} />
+          <Route path='/payments' component={payments} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
