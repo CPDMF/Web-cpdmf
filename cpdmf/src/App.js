@@ -1,35 +1,37 @@
-// import './App.css';
 import React from 'react';
-import {BrowserRouter,Route,Switch} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-import Header from './components/Header/Header';
-import Login from './components/Pages/Login/Login';
-import About from './components/Pages/About/About';
-import Home from './components/Pages/Home/Home';
-import View from './components/Pages/Dashboard/View/View';
+import './App.css';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import dashboard from './pages/dashboard';
+import cpd from './pages/cpd';
+import course from './pages/course';
+import workshop from './pages/workshop';
+import blogs from './pages/blog';
+import forum from './pages/forum';
+import reports from './pages/reports';
+import job from './pages/job';
+import payments from './pages/payments';
 
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Header/>
+    <>
+      <Router>
+        <Navbar />
         <Switch>
-        <Route path="/about">
-           <About/> 
-        </Route> 
-        <Route path="/login">
-        <Login />
-        </Route>
-        <Route path="/dashboard">
-        <View />
-        </Route>
-        <Route path="/">
-          <Home/>
-        </Route>
-        </Switch> 
-      </BrowserRouter>
-    </div>
+          <Route path='/' exact component={dashboard} />
+          <Route path='/cpd' component={cpd} />
+          <Route path='/course' component={course} />
+          <Route path='/workshop' exact component={workshop} />
+          <Route path='/blog' component={blogs} />
+          <Route path='/forum' component={forum} />
+          <Route path='/reports' exact component={reports} />
+          <Route path='/job' component={job} />
+          <Route path='/payments' component={payments} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
