@@ -1,0 +1,18 @@
+.root{
+    flex-grow: 1;
+    margin: 50px;
+}
+
+container{
+    margin: 20px;
+}
+
+.paper{
+    padding: 20px;
+    text-align:left;  
+}
+
+.chart1{
+    height: 60vh;
+}
+

@@ -6,7 +6,7 @@ import Header from './components/Header/Header';
 import Login from './components/Pages/Login/Login';
 import About from './components/Pages/About/About';
 import Home from './components/Pages/Home/Home';
-import View from './components/Pages/Dashboard/View/View';
+import View from './components/Dashboard/View/View';
 
 
 function App() {
