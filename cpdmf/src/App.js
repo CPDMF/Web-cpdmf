@@ -9,7 +9,6 @@ import Home from './components/Pages/Home/Home';
 import View from './components/Pages/Dashboard/View/View';
 
 
-
 function App() {
   return (
     <div>
@@ -23,7 +22,7 @@ function App() {
         <Login />
         </Route>
         <Route path="/dashboard">
-       <View/>
+        <View />
         </Route>
         <Route path="/">
           <Home/>
